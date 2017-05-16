@@ -107,6 +107,14 @@ console.log(stockCar);
    the value at `name`, and just the value at `age`.
  */
 
+//var plainPerson = {};
+
+//function buildPerson(person, nameString, age){
+
+//}
+
+
+
 
 /*
    Display values of objects that are inside an array
@@ -146,6 +154,23 @@ console.log(stockCar);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+var sumObjResult = {};
+var sumObj = {
+
+a: 8,
+b: 7,
+result: undefined,
+
+};
+
+function objectAddition(object){
+  object.result = object.a + object.b;
+  return object;
+}
+
+sumObjResult = objectAddition(sumObj);
+console.log(sumObjResult);
+
 
 
 /*
