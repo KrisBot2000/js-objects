@@ -151,6 +151,11 @@ console.log(completePerson.age);
             ...
  */
 
+//var arrayOfObjects = (https://gist.github.com/sgnl/958adf99007329d2e4ff);
+
+function printProcessedOrders(orders){
+
+}
 
 /*
    Addition with an object
@@ -164,7 +169,7 @@ console.log(completePerson.age);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
-var sumObjResult = {};
+
 var sumObj = {
 
 a: 8,
@@ -178,7 +183,7 @@ function objectAddition(object){
   return object;
 }
 
-sumObjResult = objectAddition(sumObj);
+var sumObjResult = objectAddition(sumObj);
 console.log(sumObjResult);
 
 
