@@ -27,7 +27,7 @@ var dog = {
   }
 };
 
-console.log("My dog " + dog.name + " is " + dog.age + " year old likes to " + dog.speak() + ".");
+console.log("My dog " + dog.name + " is " + dog.age + " years old and likes to " + dog.speak() + ".");
 
 
 /*
@@ -43,6 +43,16 @@ An empty object
   Console.log the object.
 */
 var kicks = {};
+
+kicks.brand = "Nike";
+kicks.color = "red";
+kicks.size = 9;
+kicks.buy = function(){
+  return "Hell Yeah!";
+};
+
+console.log(kicks);
+
 
 
 
