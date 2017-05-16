@@ -64,6 +64,11 @@ console.log(kicks);
             - add a property named `contents` and set it to be an empty array.
 */
 
+var plainBox = {};
+
+plainBox.color = "green";
+plainBox.size = 13;
+plainBox.contents = [];
 
 /*
    Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -74,6 +79,17 @@ console.log(kicks);
             - add a key named `passengers` and set it to be an empty array.
 */
 
+var stockCar = {
+
+model: "Mitsubishi",
+year: 2010,
+automaticTransmission: true,
+driver: null,
+passenger: [],
+
+};
+
+console.log(stockCar);
 
 /*
    Add new property inside a function
