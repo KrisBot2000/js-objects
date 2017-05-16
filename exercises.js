@@ -16,7 +16,18 @@ A literal object.
  Console.log the following phrase by accessing the appropriate object properties:
  
  "My dog `name` is `age` year old likes to `speak`."
- */ 
+ */  
+var dog = {
+  name: "Barkbark",
+  age: 3,
+  vegeterian: false,
+  color: ["black", "white"],
+  speak: function(){
+    return "woof!";
+  }
+};
+
+console.log("My dog " + dog.name + " is " + dog.age + " year old likes to " + dog.speak() + ".");
 
 
 /*
@@ -31,6 +42,8 @@ An empty object
             
   Console.log the object.
 */
+var kicks = {};
+
 
 
 /* 
