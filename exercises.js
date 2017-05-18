@@ -275,7 +275,7 @@ console.log(sumObjResult);
 
 function printObj(object){
 
-var output = console.log(object.a + " + " + object.b + " = " + object.result);
+object.output = console.log(object.a + " + " + object.b + " = " + object.result);
 return object;
 }
 
@@ -290,6 +290,10 @@ printObj(sumObjResult);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
+function putInPlainBox(object){
+  for()
+
+}
 
 /*
    Detecting transmission
