@@ -240,8 +240,8 @@ function printProcessedOrders(orders){
 
 var sumObj = {
 
-a: 8,
-b: 7,
+a: 1,
+b: 9,
 result: undefined,
 
 };
@@ -273,13 +273,13 @@ console.log(sumObjResult);
         **create more** objects and invoke your function multiple times.
  */
 
-//function printObj(object){
+function printObj(object){
 
-//console.log(object.a + " + " object.b + " = " )
+var output = console.log(object.a + " + " + object.b + " = " + object.result);
+return object;
+}
 
-//}
-
-
+printObj(sumObjResult);
 /*
    Putting stuff in `plainBox`
         Declare a function named putInPlainBox and a single parameter which will be an object. Within this function, write a 
