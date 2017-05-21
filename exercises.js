@@ -85,7 +85,7 @@ console.log(plainBox);
 
 var stockCar = {
 
-model: "Mitsubishi",
+model: "Chevy",
 year: 2010,
 automaticTransmission: true,
 driver: null,
@@ -218,7 +218,7 @@ function printProcessedOrders(orders){
 
 }
 
-
+printProcessedOrders(arrayOfObjects);
 
 
 
@@ -275,11 +275,13 @@ console.log(sumObjResult);
 
 function printObj(object){
 
-object.output = console.log(object.a + " + " + object.b + " = " + object.result);
+console.log(object.a + " + " + object.b + " = " + object.result);
+object.output = object.a + " + " + object.b + " = " + object.result;
 return object;
 }
 
 printObj(sumObjResult);
+console.log(sumObjResult);
 /*
    Putting stuff in `plainBox`
         Declare a function named putInPlainBox and a single parameter which will be an object. Within this function, write a 
@@ -290,10 +292,21 @@ printObj(sumObjResult);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
-function putInPlainBox(object){
-  for()
+//var plainBox = {};
 
+//plainBox.color = "green";
+//plainBox.size = 13;
+//plainBox.contents = [];
+
+function putInPlainBox(object){
+  for(i=0; i<10; i++){
+    plainBox.contents.push(Math.floor(Math.random()*101));
+  }
+    return object;
 }
+
+var plainBoxResult = putInPlainBox(plainBox);
+console.log(plainBoxResult);
 
 /*
    Detecting transmission
@@ -306,6 +319,19 @@ function putInPlainBox(object){
         Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
 
+function detectingTransmission(object){
+  if (object.automaticTransmission === true){
+    console.log("automatic transmission");
+    return true;
+  }else{
+    console.log("manual transmission");
+    return false;
+  }
+}
+
+
+var isAutomaticTransmission = detectingTransmission(stockCar);
+console.log(isAutomaticTransmission);
 
 /*
    Who's driving this thing?!
@@ -319,6 +345,13 @@ function putInPlainBox(object){
         your results. Consider using `plainPerson` as your driver.
  */
 
+function addDriver(car, person){
+  car.driver = person.name;
+  return car;
+}
+
+var stockCarWithDriver = addDriver(stockCar,plainPerson);
+console.log(stockCarWithDriver);
 
 /*
     #Final Boss
